@@ -6,6 +6,8 @@ export const palette = {
     manatee: "#8F9095",
     alto: "#D9D9D9",
     zircon: "#FCFDFF",
+    japaneseMaple: "#760202",
+    redBerry: "#8b0202",
     brightRed: "#A60303",
 };
 
@@ -20,5 +22,11 @@ export const theme = {
     page: {
         background: palette.shark,
         text: palette.zircon,
+    },
+    headerParagraph: palette.manatee,
+    buttons: {
+        button: palette.brightRed,
+        hover: palette.redBerry,
+        active: palette.japaneseMaple,
     },
 };
