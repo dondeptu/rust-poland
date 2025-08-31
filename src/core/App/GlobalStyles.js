@@ -16,8 +16,9 @@ export const GlobalStyle = createGlobalStyle`
         font-family: ${({ theme }) => theme.fonts.text};
         background-color: ${({ theme }) => theme.page.background};
         color: ${({ theme }) => theme.page.text};
-        font-size: 18;
+        font-size: 18px;
         font-weight: 400;
         word-break: break-word;
+        margin: 28px 180px 72px;
     }
 `;
