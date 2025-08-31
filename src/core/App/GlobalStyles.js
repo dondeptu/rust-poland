@@ -13,6 +13,11 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-color: grey;
+        font-family: ${({ theme }) => theme.fonts.text};
+        background-color: ${({ theme }) => theme.page.background};
+        color: ${({ theme }) => theme.page.text};
+        font-size: 18;
+        font-weight: 400;
+        word-break: break-word;
     }
 `;
