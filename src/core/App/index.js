@@ -1,10 +1,12 @@
+import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyles";
+import { theme } from "./theme";
 
 export const App = () => (
-  <div>
+  <ThemeProvider theme={theme}>
     <GlobalStyle />
-    Hello!
-  </div>
+    <div>Hello!</div>
+  </ThemeProvider>
 );
 
 export default App;
