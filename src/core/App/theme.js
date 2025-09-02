@@ -18,6 +18,7 @@ export const theme = {
     fonts: {
         headers: "'Space Mono', monospace",
         text: "'Roboto', sans-serif",
+        logo: "'Pixelify Sans', sans-serif",
     },
     page: {
         background: palette.shark,
@@ -28,5 +29,8 @@ export const theme = {
         button: palette.brightRed,
         hover: palette.redBerry,
         active: palette.japaneseMaple,
+    },
+    navigation: {
+        active: palette.brightRed,
     },
 };
