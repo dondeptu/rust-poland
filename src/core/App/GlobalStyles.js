@@ -20,5 +20,10 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         word-break: break-word;
         margin: 28px 180px 72px;
+
+        @media(max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+            font-size: 16px;
+            margin: 33px 9px 46px;
+        }
     }
 `;
