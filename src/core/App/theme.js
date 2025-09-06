@@ -32,5 +32,9 @@ export const theme = {
     },
     navigation: {
         active: palette.brightRed,
+        dropdownMenu: {
+            background: palette.abbey,
+            active: palette.abbeyDarker,
+        },
     },
 };
