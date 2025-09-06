@@ -1,13 +1,11 @@
-import { toArticles, toHomepage } from "../../../core/App/routes";
+import { toArticles } from "../../../core/App/routes";
 import { becomeSpeaker, meetup } from "../../../core/App/externalLinks";
-import { List, StyledLogo, NavBar, StyledNavLink, Title, LogoNavLink, Item, MenuLink } from "./styled";
+import { LogoNavLink } from "../LogoNavLink";
+import { List, NavBar, StyledNavLink, Item, MenuLink } from "./styled";
 
 export const DesktopNav = () => (
     <NavBar>
-        <LogoNavLink to={toHomepage()}>
-            <StyledLogo alt="Logo" />
-            <Title>Rust Poland</Title>
-        </LogoNavLink>
+        <LogoNavLink variant={"desktop"} />
         <List>
             <Item>
                 <MenuLink href={meetup()} target="_blank" rel="noopener noreferrer">Meetup</MenuLink>

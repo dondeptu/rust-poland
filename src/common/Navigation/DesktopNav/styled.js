@@ -1,33 +1,9 @@
 import styled, { css } from "styled-components";
-import { ReactComponent as Logo } from "../logo.svg";
 import { NavLink } from "react-router";
 
 export const NavBar = styled.nav`
     display: flex;
     justify-content: space-between;
-`;
-
-export const LogoNavLink = styled(NavLink)`
-    display: flex;
-    align-items: flex-end;
-    gap: 14px;
-    text-decoration: none;
-`;
-
-export const StyledLogo = styled(Logo)`
-    width: 76px;
-`;
-
-export const Title = styled.span`
-    font-family: ${({ theme }) => theme.fonts.logo};
-    font-weight: 700;
-    font-size: 20px;
-    color: ${({ theme }) => theme.page.text};
-    padding-bottom: 12px;
-
-    &:active {
-        color: ${({ theme }) => theme.navigation.active};
-    }
 `;
 
 export const List = styled.ul`
