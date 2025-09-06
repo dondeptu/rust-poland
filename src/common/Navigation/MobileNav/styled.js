@@ -7,6 +7,13 @@ export const NavBar = styled.nav`
     align-items: flex-end;
 `;
 
-export const BurgerMenu = styled(BurgerMenuIcon)`
+export const MenuButton = styled.button`
+    padding: 0;
+    border: 0;
     width: 27px;
+    height: 25px;
+`;
+
+export const BurgerIcon = styled(BurgerMenuIcon)`
+    width: 100%;
 `;

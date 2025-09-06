@@ -5,9 +5,9 @@ import { ReactComponent as Logo } from "../../logo.svg";
 
 export const MobileMenu = styled.nav`
     position: fixed;
-    z-index: 10;
+    z-index: 100;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     height: 100vh;
     background-color: ${({ theme }) => theme.page.background};
@@ -16,12 +16,25 @@ export const MobileMenu = styled.nav`
     padding-top: 52px;
     padding-bottom: 46px;
     justify-content: space-between;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in-out;
+
+    ${({ $isOpen }) => $isOpen && css`
+        transform: translateX(0);
+    `}
+`;
+
+export const CloseMenuButton = styled.button`
+    width: 27px;
+    height: 28px;
+    padding: 0;
+    border: 0;
+    align-self: flex-end;
+    margin-right: 9px;
 `;
 
 export const CloseMenuIcon = styled(CloseIcon)`
-    width: 27px;
-    align-self: flex-end;
-    margin-right: 9px;
+    width: 100%;
 `;
 
 export const MenuList = styled.div`
@@ -63,8 +76,12 @@ export const MenuLink = styled.a`
     ${navBarLinksStyles}
 `;
 
+export const LogoLink = styled(NavLink)`
+    align-self: center;
+    height: 44px;
+`;
+
 export const StyledLogo = styled(Logo)`
     width: 41px;
-    height: 44px;
-    align-self: center;
+    height: 100%;
 `;
