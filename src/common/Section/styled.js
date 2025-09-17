@@ -1,5 +1,17 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.section`
+    margin-top: 136px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
+        margin-top: 90px;
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        margin-top: 56px;
+    }
+`;
+
 export const Header = styled.h2`
     font-family: ${({ theme }) => theme.fonts.headers};
     font-size: 20px;
