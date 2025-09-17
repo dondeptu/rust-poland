@@ -21,9 +21,15 @@ export const GlobalStyle = createGlobalStyle`
         word-break: break-word;
         margin: 28px 180px 72px;
 
+        @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
+            font-size: 16px;
+            margin-left: 32px;
+            margin-right: 32px;
+        }
+
         @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
             font-size: 16px;
             margin: 33px 9px 46px;
-        }
+        }  
     }
 `;

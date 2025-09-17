@@ -13,6 +13,10 @@ export const List = styled.ul`
     padding-left: 0;
     padding-bottom: 12px;
     margin: 0;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
+        gap: 30px;
+    }
 `;
 
 export const Item = styled.li`
@@ -30,6 +34,10 @@ const navBarLinksStyles = css`
     &:active,
     &.active {
         color: ${({ theme }) => theme.navigation.active};
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
+        font-size: 16px;
     }
 `;
 

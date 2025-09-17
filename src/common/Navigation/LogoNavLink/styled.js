@@ -12,6 +12,10 @@ export const LogoLink = styled(NavLink)`
 export const StyledLogo = styled(Logo)`
     width: ${({ $variant }) => $variant === "mobile" ? "41px" : "76px"};
     height: ${({ $variant }) => $variant === "mobile" ? "44px" : "auto"};
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
+        width: 64px;
+    }
 `;
 
 export const Title = styled.span`
@@ -23,5 +27,9 @@ export const Title = styled.span`
 
     &:active {
         color: ${({ theme }) => theme.navigation.active};
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
+        font-size: 16px;
     }
 `;
