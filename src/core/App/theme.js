@@ -38,4 +38,7 @@ export const theme = {
             active: palette.abbeyDarker,
         },
     },
+    box: {
+        background: palette.abbey,
+    },
 };
