@@ -5,7 +5,7 @@ import { MobileNav } from "./MobileNav";
 
 export const Navigation = () => {
     const windowWidth = useWindowWidth();
-    const mobileWidth = theme.breakpoints.mobile;
+    const mobileWidth = theme.breakpoints.mobileMax;
 
     return (
         windowWidth > mobileWidth

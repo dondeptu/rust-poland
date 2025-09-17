@@ -13,7 +13,8 @@ export const palette = {
 
 export const theme = {
     breakpoints: {
-        mobile: 776
+        mobileMax: 776,
+        tabletMax: 1280,
     },
     fonts: {
         headers: "'Space Mono', monospace",
