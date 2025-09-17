@@ -1,8 +1,9 @@
-import { Header } from "./styled";
+import { Header, Wrapper } from "./styled";
 
-export const Section = ({ header, content }) => (
-    <section>
+export const Section = ({ variant, header, content, additionalContent }) => (
+    <Wrapper $variant={variant}>
         <Header>{header}</Header>
-        <div>{content}</div>
-    </section>
+        {content}
+        {additionalContent}
+    </Wrapper>
 );

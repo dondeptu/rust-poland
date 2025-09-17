@@ -10,6 +10,21 @@ export const Wrapper = styled.section`
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         margin-top: 56px;
     }
+
+    ${({ $variant, theme }) => $variant === "aboutUs" &&
+        `
+        display: grid;
+        grid-template-rows: auto 1fr;
+        column-gap: 108px;
+
+        @media(max-width: ${theme.breakpoints.tabletMax}px) {
+            column-gap: 50px;
+        }
+        
+        @media(max-width: ${theme.breakpoints.mobileMax}px) {
+            display: grid;
+        }
+    `}
 `;
 
 export const Header = styled.h2`
@@ -28,6 +43,6 @@ export const Header = styled.h2`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         font-size: 16px;
-        margin-bottom: 8px;
+        margin-bottom: 10px;
     }
 `;

@@ -41,4 +41,5 @@ export const theme = {
     box: {
         background: palette.abbey,
     },
+    noImageBackground: palette.alto,
 };
