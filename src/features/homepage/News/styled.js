@@ -43,9 +43,13 @@ export const Line = styled.div`
     border-bottom: 1px solid ${({ theme }) => theme.box.dateHeader};
 `;
 
-// TO DO: It's going to be a NavLink to the Article
 export const ArticleHeader = styled.h3`
     margin: 0;
+`;
+
+export const ArticleLink = styled(NavLink)`
+    text-decoration: none;
+    color: ${({ theme }) => theme.page.text};
     font-family: ${({ theme }) => theme.fonts.headers};
     font-size: 20px;
 
@@ -55,6 +59,10 @@ export const ArticleHeader = styled.h3`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         font-size: 16px;
+    }
+
+    &:hover {
+        border-bottom: 1px solid currentColor;
     }
 `;
 

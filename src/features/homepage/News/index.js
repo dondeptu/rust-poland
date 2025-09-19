@@ -1,5 +1,5 @@
 import { Section } from "../../../common/Section";
-import { ArrowIcon, ArticleDate, ArticleHeader, Box, Line, LinkButton, Paragraph, Wrapper } from "./styled";
+import { ArrowIcon, ArticleDate, ArticleHeader, ArticleLink, Box, Line, LinkButton, Paragraph, Wrapper } from "./styled";
 
 export const News = () => (
     <Section
@@ -10,7 +10,9 @@ export const News = () => (
                     <Box key={i}>
                         <ArticleDate>13 January 2025</ArticleDate>
                         <Line />
-                        <ArticleHeader>Rust Gdansk is online!</ArticleHeader>
+                        <ArticleHeader>
+                            <ArticleLink to={"/"}>Rust Gdansk is online!</ArticleLink>
+                        </ArticleHeader>
                         <Paragraph>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus neque elit, et mattis dui auctor a. Integer eget sem finibus, ullamcorper leo at, ullamcorper felis. Donec condimentum elit libero, consequat pellentesque nibh porta in.
                         </Paragraph>
