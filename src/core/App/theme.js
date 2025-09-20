@@ -40,6 +40,13 @@ export const theme = {
     },
     box: {
         background: palette.abbey,
+        dateHeader: palette.shark,
     },
     noImageBackground: palette.alto,
+    footer: {
+        header: palette.brightRed,
+        underline: palette.abbey,
+        label: palette.alto,
+        border: palette.manatee,
+    },
 };
