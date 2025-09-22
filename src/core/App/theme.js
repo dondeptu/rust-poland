@@ -49,4 +49,9 @@ export const theme = {
         label: palette.alto,
         border: palette.manatee,
     },
+    pagination: {
+        color: palette.zircon,
+        active: palette.brightRed,
+        disabled: palette.abbey,
+    },
 };
