@@ -7,15 +7,15 @@ export const LogoLink = styled(NavLink)`
     align-items: flex-end;
     gap: ${({ $variant }) => $variant === "mobile" ? "16px" : "14px"};
     text-decoration: none;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        flex-direction: row-reverse;
+    }
 `;
 
 export const StyledLogo = styled(Logo)`
     width: ${({ $variant }) => $variant === "mobile" ? "41px" : "76px"};
     height: ${({ $variant }) => $variant === "mobile" ? "44px" : "auto"};
-
-    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
-        width: 64px;
-    }
 `;
 
 export const Title = styled.span`
