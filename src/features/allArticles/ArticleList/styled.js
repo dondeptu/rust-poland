@@ -12,7 +12,7 @@ export const ArticleSection = styled.section`
     }
 `;
 
-export const ArticlesOfYear = styled.div`
+export const YearBlock = styled.div`
     margin: 16px 0;
 `;
 

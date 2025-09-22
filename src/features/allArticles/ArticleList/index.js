@@ -1,9 +1,12 @@
 import { ArticleBox } from "./ArticleBox";
-import { YearHeader, StyledLine, List, ArticleSection, Year, ArticlesOfYear } from "./styled";
+import { YearHeader, StyledLine, List, ArticleSection, Year, YearBlock } from "./styled";
 
 export const ArticleList = () => (
+    // NOTE: Currently the year header is static.
+    // In the future, we should render a new YearBlock
+    // each time the articles list contains a different year.
     <ArticleSection>
-        <ArticlesOfYear>
+        <YearBlock>
             <YearHeader>
                 <Year>{"2025"}</Year>
                 <StyledLine />
@@ -19,9 +22,9 @@ export const ArticleList = () => (
                     />
                 ))}
             </List>
-        </ArticlesOfYear>
+        </YearBlock>
 
-        <ArticlesOfYear>
+        <YearBlock>
             <YearHeader>
                 <Year>{"2024"}</Year>
                 <StyledLine />
@@ -37,6 +40,6 @@ export const ArticleList = () => (
                     />
                 ))}
             </List>
-        </ArticlesOfYear>
+        </YearBlock>
     </ArticleSection>
 );
