@@ -40,7 +40,7 @@ export const StyledLine = styled.div`
     }
 `;
 
-export const Subheader = styled.h2`
+export const Subheader = styled.h3`
     margin-top: 0;
     margin-bottom: 22px;
     font-family: ${({ theme }) => theme.fonts.headers};
