@@ -1,16 +1,14 @@
 import { ArticleDate, ArticleLink, Parahraph, StyledLine, Subheader, Wrapper } from "./styled";
 
-export const ArticleBox = () => (
+export const ArticleBox = ({ releaseDate, title, abstact }) => (
     <Wrapper>
-        <ArticleDate>13 January</ArticleDate>
+        <ArticleDate>{releaseDate}</ArticleDate>
         <StyledLine />
         <div>
             <Subheader>
-                <ArticleLink to={"/"}>Rust Gdansk is online!</ArticleLink>
+                <ArticleLink to={"/"}>{title}</ArticleLink>
             </Subheader>
-            <Parahraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus neque elit, et mattis dui auctor a. Integer eget sem finibus, ullamcorper leo at, ullamcorper felis. Donec condimentum elit libero, consequat pellentesque nibh porta in.
-            </Parahraph>
+            <Parahraph>{abstact}</Parahraph>
         </div>
     </Wrapper>
 );
