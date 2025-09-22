@@ -5,6 +5,7 @@ import { Homepage } from "../../features/homepage";
 import { BrowserRouter, Route, Routes } from "react-router";
 import { toArticles, toHomepage } from "./routes";
 import { Navigation } from "../../common/Navigation";
+import { AllArticles } from "../../features/allArticles";
 
 export const App = () => (
   <BrowserRouter>
@@ -13,7 +14,7 @@ export const App = () => (
       <Navigation />
       <Routes>
         <Route path={toHomepage()} element={<Homepage />} />
-        <Route path={toArticles()} element={""} />
+        <Route path={toArticles()} element={<AllArticles />} />
       </Routes>
     </ThemeProvider>
   </BrowserRouter>

@@ -1,5 +1,6 @@
 import { Section } from "../../../common/Section";
 import { ArrowIcon, ArticleDate, ArticleHeader, ArticleLink, Box, Line, LinkButton, Paragraph, Wrapper } from "./styled";
+import { toArticles } from "../../../core/App/routes";
 
 export const News = () => (
     <Section
@@ -21,7 +22,7 @@ export const News = () => (
             </Wrapper>
         }
         additionalContent={
-            <LinkButton>
+            <LinkButton to={toArticles()}>
                 All Articles
                 <ArrowIcon />
             </LinkButton>
