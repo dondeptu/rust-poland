@@ -7,6 +7,16 @@ export const Nav = styled.nav`
     align-items: center;
     margin: 52px 0;
     gap: 20px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
+        margin-top: 46px;
+        margin-bottom: 46px;
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
 `;
 
 export const PageButton = styled.button`
@@ -23,17 +33,37 @@ export const PageButton = styled.button`
         color: ${({ theme }) => theme.pagination.disabled};
         cursor: not-allowed;
     }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
+        font-size: 18px;
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 14px;
+    }
 `;
 
 export const PaginationButton = styled(PageButton)`
     width: 30px;
     height: 30px;
     margin: 0 4px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        width: 22px;
+        height: 22px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
 `;
 
 export const NextArrow = styled(Arrow)`
     width: 30px;
     height: 30px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        width: 22px;
+        height: 22px;
+    }
 `;
 
 export const PrevArrow = styled(NextArrow)`
