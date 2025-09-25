@@ -1,4 +1,3 @@
 export const toHomepage = () => "/";
 export const toArticles = () => "/articles";
-// TO DO:
-// article {id}
+export const toArticle = ({ id } = { id: ":id" }) => `/article/${id}`;

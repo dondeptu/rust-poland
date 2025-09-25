@@ -24,6 +24,7 @@ export const ArticleList = () => {
                 <List>
                     {Array.from({ length: 4 }).map((_, i) => (
                         <ArticleBox key={i}
+                            id={i}
                             releaseDate={"13 January"}
                             title={"Rust Poland is online!"}
                             abstact={
@@ -41,6 +42,7 @@ export const ArticleList = () => {
                 <List>
                     {Array.from({ length: 5 }).map((_, i) => (
                         <ArticleBox key={i}
+                            id={i}
                             releaseDate={"13 January"}
                             title={"Rust Poland is online!"}
                             abstact={
