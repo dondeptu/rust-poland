@@ -2,7 +2,7 @@ import { facebook, linkedIn } from "../../core/App/externalLinks";
 import { ContactDetails, ContactLabel, ContactLink, ContactValue, FacebookIcon, Footer, Form, FormButton, FormLabel, FormWrapper, Header, Input, LinkedInIcon, Paragraph, SocialLink, Socials, TextArea, Wrapper } from "./styled";
 
 export const ContactUs = () => (
-    <Footer>
+    <Footer id="footer">
         <Wrapper>
             <Header>Contact Us</Header>
             <Paragraph>
