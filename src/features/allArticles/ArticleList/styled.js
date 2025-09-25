@@ -58,4 +58,8 @@ export const StyledLine = styled.div`
 export const List = styled.div`
     display: grid;
     gap: 18px;
+
+    @media(min-width: ${({ theme }) => theme.breakpoints.largeDesktopMin}px) {
+        gap: 22px;
+    }
 `;

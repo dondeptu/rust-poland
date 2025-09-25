@@ -15,6 +15,7 @@ export const theme = {
     breakpoints: {
         mobileMax: 776,
         tabletMax: 1280,
+        largeDesktopMin: 1640,
     },
     fonts: {
         headers: "'Space Mono', monospace",

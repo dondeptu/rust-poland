@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
     grid-template-columns: 1fr 1fr;
     gap: 28px 14px;
 
+    @media(min-width: ${({ theme }) => theme.breakpoints.largeDesktopMin}px) {
+        gap: 34px 38px;
+    }
+
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         grid-template-columns: 1fr;
         gap: 16px;
