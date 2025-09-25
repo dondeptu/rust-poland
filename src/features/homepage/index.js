@@ -1,4 +1,3 @@
-import { ContactUs } from "../../common/ContactUs";
 import { AboutUs } from "./AboutUs";
 import { Hero } from "./Hero";
 import { News } from "./News";
@@ -10,6 +9,5 @@ export const Homepage = () => (
         <Sponsors />
         <AboutUs />
         <News />
-        <ContactUs />
     </main>
 );

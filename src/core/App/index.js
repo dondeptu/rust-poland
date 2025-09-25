@@ -8,6 +8,7 @@ import { Navigation } from "../../common/Navigation";
 import { AllArticles } from "../../features/allArticles";
 import { ArticlePage } from "../../features/articlePage";
 import ScrollToTop from "./ScrollToTop";
+import { ContactUs } from "../../common/ContactUs";
 
 export const App = () => (
   <BrowserRouter>
@@ -20,7 +21,7 @@ export const App = () => (
         <Route path={toArticles()} element={<AllArticles />} />
         <Route path={toArticle()} element={<ArticlePage />} />
       </Routes>
-      {/* TO DO: add ContactUs footer component here */}
+      <ContactUs />
     </ThemeProvider>
   </BrowserRouter>
 );
