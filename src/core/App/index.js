@@ -2,7 +2,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyles";
 import { theme } from "./theme";
 import { Homepage } from "../../features/homepage";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { toArticle, toArticles, toHomepage } from "./routes";
 import { Navigation } from "../../common/Navigation";
 import { AllArticles } from "../../features/allArticles";

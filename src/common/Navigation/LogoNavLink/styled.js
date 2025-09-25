@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { ReactComponent as Logo } from "../logo.svg";
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 
 export const LogoLink = styled(NavLink)`
     display: flex;

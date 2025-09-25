@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 import styled, { css } from "styled-components";
 import { ReactComponent as CloseIcon } from "./close-menu.svg";
 import { ReactComponent as Logo } from "../../logo.svg";
