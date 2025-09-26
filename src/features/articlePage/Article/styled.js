@@ -3,20 +3,16 @@ import styled from "styled-components";
 export const Wrapper = styled.section`
     background: ${({ theme }) => theme.box.background};
     border-radius: 3px;
-    margin-top: 68px;
-    margin-bottom: 136px;
-    padding-top: 92px;
-    padding-bottom: 34px;
+    margin: 68px 0 136px;
+    padding: 92px 0 34px;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
         margin-top: 60px;
         padding-top: 70px;
-        // TO DO: margin-bottom, padding-bottom after footer
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        margin-top: 50px;
-        margin-bottom: 68px;
+        margin: 50px 0 68px;
         padding: 26px 0;
     }
 `;
