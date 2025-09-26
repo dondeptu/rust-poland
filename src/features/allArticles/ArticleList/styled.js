@@ -14,6 +14,10 @@ export const ArticleSection = styled.section`
 
 export const YearBlock = styled.div`
     margin: 16px 0;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
+        margin: 8px 0;
+    }
 `;
 
 export const YearHeader = styled.div`
@@ -29,6 +33,7 @@ export const YearHeader = styled.div`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         gap: 13px;
+        margin-bottom: 8px;
     }
 `;
 
@@ -61,5 +66,9 @@ export const List = styled.div`
 
     @media(min-width: ${({ theme }) => theme.breakpoints.largeDesktopMin}px) {
         gap: 22px;
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        gap: 16px;
     }
 `;

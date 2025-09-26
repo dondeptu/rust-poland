@@ -17,14 +17,19 @@ export const Image = styled.img`
 `;
 
 export const NoImage = styled.div`
-    width: 348px;
-    height: 204px;
+    width: 400px;
+    height: 240px;
     background: ${({ theme }) => theme.noImageBackground};
     display: flex;
     align-items: center;
     justify-content: center;
     grid-column: 2;
     grid-row: 1 / 3;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
+        width: 348px;
+        height: 204px;
+    }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         width: 100%;

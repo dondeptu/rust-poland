@@ -74,4 +74,12 @@ export const Separator = styled.span`
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.01em;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
+        font-size: 18px;
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 14px;
+    }
 `;
